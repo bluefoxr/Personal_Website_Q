@@ -1,0 +1,22 @@
+---
+title: "Global Innovation Index"
+author:
+  - William Becker
+date: 2022-06-01
+image: featured.png
+categories:
+  - Indicators
+  - Innovation
+  - Software
+subtitle: "Custom R package development for innovation modelling"
+links:
+- icon: book
+  name: website
+  url: https://www.globalinnovationindex.org/Home
+---
+
+Over 2021-2022 I have developed a custom R package for the UN's [World Intellectual Property Organisation](https://www.wipo.int/portal/en/index.html). This involved building a streamlined package capable of building the [Global Innovation Index](https://www.globalinnovationindex.org/Home) (a hierarchical composite indicator), including data screening, data treatment, normalisation and aggregation.
+
+The package also allows ex-post checks on methodological assumptions, and automatically yields data for generating country profiles. This greatly saves time and dramatically reduces the possibility of errors in the complex model evaluation.
+
+The package is hosted at a private repo on Github.

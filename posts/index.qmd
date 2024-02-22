@@ -1,0 +1,27 @@
+---
+title: "Blog"
+author: ""
+title-block-banner: false
+page-layout: full
+description-meta: "Things that happened."
+
+listing:
+  page-size: 5
+  contents: 
+    - "**/index.qmd"
+  sort: "date desc"
+  categories: true
+  fields: [image, date, title, reading-time]
+  sort-ui: true
+  filter-ui: true
+    
+toc-title: Year
+toc-location: right
+date-format: "MMMM D, YYYY"
+image: ""
+code-tools: false
+comments: false
+---
+
+Here's what I've been doing recently.
+

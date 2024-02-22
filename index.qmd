@@ -1,0 +1,30 @@
+---
+title: "William Becker"
+pagetitle: "William Becker, PhD"
+subtitle: "Data Scientist"
+image: img/profile_me_outdoor.jpg
+
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/bluefoxr
+    - icon: linkedin
+      text: "LinkedIn"
+      href: https://www.linkedin.com/in/webecker/
+  
+page-layout: full
+title-block-banner: false
+---
+
+::: {#hero-heading}
+
+I've led data-driven research projects for international organisations since 2011 on topics from sustainable development to globalisation.
+
+:::
+
+
+

@@ -1,0 +1,51 @@
+[
+  {
+    "listing": "/publications/index.html",
+    "items": [
+      "/publications/2022_COINr/index.html",
+      "/publications/2022_WEFnexus/index.html"
+    ]
+  },
+  {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/2023-12-21_Wrapup2023/index.html",
+      "/posts/2023-12-01_FINDApp_update/index.html",
+      "/posts/2023-11-20_WEF_update/index.html",
+      "/posts/2023-11-17_EIS_bid/index.html",
+      "/posts/2023-11-10_Vienna_workshop/index.html",
+      "/posts/2023-10-10_KSA_workshop/index.html",
+      "/posts/2023-09-28_COIN_training/index.html",
+      "/posts/2023-09-08_EDGAR_booklet/index.html",
+      "/posts/2023-07-28_A2SIT_launch/index.html",
+      "/posts/2022-12-16_Freelancing/index.html",
+      "/posts/2022-12-05_SAMOweb_plus/index.html",
+      "/posts/2023-01-11_Teams/index.html",
+      "/posts/2022-10-11_COINr_Paper/index.html",
+      "/posts/2022-09-14_Peer_Review/index.html",
+      "/posts/2022-09-08_Genesis/index.html",
+      "/posts/2022-03-01_OccamsRazor/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/ESI/index.html",
+      "/projects/EDGAR/index.html",
+      "/projects/A2SIT/index.html",
+      "/projects/Training/index.html",
+      "/projects/Vietnam/index.html",
+      "/projects/COINrApp/index.html",
+      "/projects/COINr/index.html",
+      "/projects/Bioeconomy/index.html",
+      "/projects/GII/index.html",
+      "/projects/WEF/index.html",
+      "/projects/UNIDO/index.html",
+      "/projects/other/index.html",
+      "/projects/COINtool/index.html",
+      "/projects/Programme monitoring/index.html",
+      "/projects/IA/index.html",
+      "/projects/ASEM/index.html"
+    ]
+  }
+]

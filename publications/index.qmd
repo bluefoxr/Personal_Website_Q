@@ -1,0 +1,21 @@
+---
+title: "Publications" 
+description: |
+  Journal publications
+listing: 
+  contents: 
+    - "**/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [title, subtitle, author, categories, date]
+  image-align: left
+  page-size: 5
+
+format: 
+  html: 
+    page-layout: full
+title-block-banner: false
+---

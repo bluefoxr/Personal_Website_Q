@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "William Becker"
+  navbar:
+    right:
+      - text: About
+        href: about.qmd
+      - text: Blog
+        href: posts/index.qmd
+      - text: Projects
+        href: projects/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+  page-footer: "Copyright 2024, William Becker"
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+
+

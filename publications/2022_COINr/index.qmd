@@ -1,0 +1,24 @@
+---
+author:
+  - William Becker
+  - Giulio Caperna
+  - Maria Del Sorbo
+  - Hedvig Norlen
+  - Eleni Papadimitriou
+  - Michaela Saisana
+date: "2022-10-11"
+doi: "10.21105/joss.04567"
+subtitle: 'Journal of Open Source Software'
+categories:
+  - Indicators
+  - Software
+title: "COINr: An R package for developing composite indicators"
+---
+
+# About
+
+The COINr package, introduced in this article, is an R package that aims to provide a harmonised development environment for composite indicators that includes all common operations from indicator selection, data treatment and imputation up to aggregation, presentation of results and sensitivity analysis. COINr enables development, visualisation and exploration of methodological variations, and encourages transparency and reproducibility.
+
+![](featured.jpg)
+
+COINr is hosted at its GitHub page [here](https://github.com/bluefoxr/COINr/). All documentation is [here](https://bluefoxr.github.io/COINr/).

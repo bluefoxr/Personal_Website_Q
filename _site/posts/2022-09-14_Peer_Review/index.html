@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="William Becker">
+<meta name="dcterms.date" content="2022-09-14">
+
+<title>William Becker - Open peer review: a better way?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">William Becker</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Open peer review: a better way?</h1>
+            <p class="subtitle lead"></p><p>Using Github and transparent open review to improve the peer review process.</p><p></p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Academia</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>William Becker </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 14, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><img src="featured.jpg" class="img-fluid"></p>
+<p>If you have worked in academia for any length of time at all, you will know a bit about <em>peer review</em>, and will most likely have had some frustrating experiences along the way.</p>
+<p>But for non-academics, what is peer review anyway? Well, first, it’s necessary to explain that much of an academic’s worth is measured by the number (and to some extent, the quality) of academic publications. A publication is basically a report of some research done by the academic, usually of around 6000-10000 words. The “manuscript” (yes for some reason we have to pretend we’re in Ancient Egypt) is submitted to an appropriate journal, it is reviewed by “peer review”, and then if it is accepted, it is published, and the academic and his/her colleagues get a juicy publication point and accompanying citations to beef up their reputation.</p>
+<p>More or less, the process of publication looks like this:</p>
+<ol type="1">
+<li>Researcher, usually with some colleagues, does some research.</li>
+<li>They write a manuscript describing the research and the findings.</li>
+<li>They find a suitable journal to submit it to. There are loads of journals that cover every type of research imaginable, so they pick the most suitable one that fits the topic and the level of the research.</li>
+<li>They submit the paper to the journal.</li>
+<li>The journal finds some reviewers, who are typically other academics working in the same field. They spend some time reading the research. They can each decide to recommend that either the work is rejected outright, or could be published after some kind of modifications which they suggest.</li>
+<li>If the paper is not rejected by the reviewers, the authors have to address the reviewers’ comments, or else give some good reasons why they are not making the proposed changes. The comments can be anything from small typos to fundamental questions about the work and suggestions for very time-consuming further research or changes in methodology.</li>
+<li>Steps 5 and 6 can repeat several times.</li>
+<li>If the reviewers and the editor are finally happy with the paper, it is recommended for publication and eventually published.</li>
+</ol>
+<p>This is a simplified version of the process, and the review part typically takes some months, but may take years. Importantly, the large majority of reviews are done confidentially, so only the editor, the reviewers and the author, see what happened. Often the reviews are <em>blind</em> (the reviewers see the names of the authors but not the other way around), or <em>double-blind</em> (both authors and reviewers don’t know the names of each other, everything is anonymised). I’ll return to this point.</p>
+<section id="problems" class="level1">
+<h1>Problems</h1>
+<p>The central idea behind peer review is sensible: research should be checked and questioned by experts. Only when the peer community is satisfied the research has been performed with a sufficient degree of rigour can it be published. Therefore, published research should in theory always be of a minimum acceptable level of quality.</p>
+<p>In practice there are <em>many</em> problems with this process. Far too many to go into much detail here: I could mention the conflicting incentives of the “publish or perish” metrics that researchers are judged on; predatory/fake journals that will publish anything for a fee; “citation circles” where groups of friendly researchers cite each other’s work simply to increase their citation counts; and the issue of “who you know” often outweighing “what you know”, among many other issues that come to mind. But let’s focus on some specific problems with the review process.</p>
+<p>Let me preface this with a disclaimer: <em>peer review is an essential part of the scientific process</em>. Reviewers give up their time to make this happen, without payment, and should be recognised for this fact. I have reviewed many papers for around 20 different journals, and many academics do more than that, and do a great job of it. However, not all reviewers play by the rules, and this is a problem. So it is the minority that I will focus on here.</p>
+<section id="hostile-reviewers" class="level2">
+<h2 class="anchored" data-anchor-id="hostile-reviewers">Hostile reviewers</h2>
+<p>Every academic has come up against hostile reviewers. The review process is not meant to be easy, but a surprising number of reviewers seem to nit-pick to an extent that seems to go beyond what is reasonable. They may insist on extensive but unnecessary modifications, or are constantly unsatisfied with revisions. In an ideal world the editor would spot these over-zealous reviewers, but editors are busy. Sometimes such reviews may be due to the fact that the reviewer is from a competing institution, and therefore there is little reason (apart from professionalism and honesty) for them to play fair. This problem is enabled by the fact that the review process is done behind closed doors, so there are virtually no consequences if reviewers don’t behave themselves.</p>
+<p>Blind and double-blind reviews should help vindictive attacks between rivals in theory, but in practice many research fields are small enough that it is often fairly obvious, even without names, to know who wrote the paper (if you are the reviewer) and to know who the reviewers are (if you are the author).</p>
+</section>
+<section id="friendly-reviewers" class="level2">
+<h2 class="anchored" data-anchor-id="friendly-reviewers">Friendly reviewers</h2>
+<p>At the other end of the spectrum are the reviewers who are your mates. To save editor time (and ostensibly to find suitable reviewers), in many journals authors are allowed to suggest reviewers for their paper. In theory, reviewers are not supposed to have any close connection with the authors, but in practice, editors have to deal with many papers and reviewers are scarce. So often, the authors’ recommended reviewers end up reviewing the paper.</p>
+<p>Clearly the problem is that if the authors are not playing cricket, so to speak, they can just recommend their friends as reviewers. Depending on the level of integrity, these reviewers may give an overly-soft review or even accept the paper outright with no modifications. The result is that the paper hasn’t really been through a real peer review. Again, this problem is facilitated by the fact that the review is not public.</p>
+</section>
+<section id="publication-for-citations" class="level2">
+<h2 class="anchored" data-anchor-id="publication-for-citations">Publication for citations</h2>
+<p>A fairly innocent-sounding comment is when a reviewer recommends that the author make some further citations to specific papers, a.k.a. “relevant literature”, possibly to “improve the context of the work”. The catch is that all of these citations happen to be the reviewer’s papers, or else those of their friends. This puts the authors in an awkward position: they can cite the proposed papers, which is easy to do, and that will appease the reviewer and bring them closer to publication. Alternatively, they could contest the recommended citations, but this will likely delay the process and could aggravate the reviewer. By far the easiest option is to just cite the papers - is it worth risking possibly months of delays? But it <em>is</em> irksome to have to “pay passage” to the reviewer in this way, and is obviously not ethical.</p>
+</section>
+<section id="lazy-reviews" class="level2">
+<h2 class="anchored" data-anchor-id="lazy-reviews">Lazy reviews</h2>
+<p>A proper review of a paper takes time, sometimes rather a long time. Apart from anything else, many research papers are complex and take time to understand, even for experts. You should carefully read the whole paper and try to spot any flaws in the methodology, mistakes in equations, and make sure it is written clearly and concisely. You should make as many suggestions as possible to improve the paper (without being nit-picky - see above), and be prepared to spend time communicating with the authors after successive revisions. Sometimes you have to check the cited work to make sure the citations actually support the statements made in the paper.</p>
+<p>Since reviews are unpaid and uncredited, it is easy for them to fall low on the priority list of the reviewers’ tasks, especially in busy periods. This can sometimes lead to very lazy reviews, where a reviewer writes a short review to simply tick it off the list. In one case, a reviewer of my paper simply copied the abstract of the paper (presenting it as his/her review) and added one vague sentence saying that it wasn’t good enough. It was clear that the reviewer had not even read the paper and had probably spent five minutes compiling the “review”.</p>
+<p>The issue is that of course it is far easier to reject a paper on vague grounds, rather than attempt to read it properly, understand it, and offer constructive comments.</p>
+</section>
+<section id="the-never-ending-story" class="level2">
+<h2 class="anchored" data-anchor-id="the-never-ending-story">The never-ending story</h2>
+<p>Reviewing takes time, as we have seen. But there should be reasonable limits. To describe a personal example, the research for one paper of mine was completed in 2014. We had a hard time finding a suitable home for the work because it was a fusion of two fields (sensitivity analysis and econometrics). At one point it was stuck in one journal for a whole year with no response from the editor. It was rejected from a few other journals because of the topic and other reasons. Finally we submitted it to another journal, where it took <em>two and a half years</em> to be reviewed. In total, it took us <em>seven years</em> to get the paper published.</p>
+<p>I’m not claiming that the paper had a divine right to publication, and in some cases reviewers had made reasonable points for rejecting the paper, which we subsequently addressed. But if research takes years to review, that is a problem for the authors and for the wider research field because there is such a huge lag in making new work visible. It means that published literature doesn’t represent the state of the art, but rather the state of the art a couple of years ago, or more.</p>
+</section>
+</section>
+<section id="a-better-way-sunny" class="level1">
+<h1>A better way? :sunny:</h1>
+<p>Ok that’s enough complaining for now. I could definitely write more, but I wanted to rather share a recent positive submission and review experience, which I think ought to be more widespread.</p>
+<p>Over the last couple of years I have built and maintained the <a href="https://bluefoxr.github.io/COINr/">COINr package</a>, which is an R package for building and analysing composite indicators. Since this package is now used quite widely, and I’m not immune to wanting a little credit for my work, I wanted to have a way that users can cite it if they choose.</p>
+<p>The problem is that I wanted to avoid having to write a long paper, when the package is already well-documented at its website and in the many vignettes that accompany it.</p>
+<p>I was very pleased then, to discover the <a href="https://joss.theoj.org/">Journal of Open Source Software</a> (JOSS). JOSS describes itself as “a developer friendly, open access journal for research software packages”. It was created to give a means for open-source software developers to write short papers that allow users to cite their work. The logic is that often, research software is well-documented, and enables others to perform research. So writing a full-length paper about the software is often unnecessary, and is done mainly to satisfy journal requirements. All this is described very well in a <a href="https://www.arfon.org/announcing-the-journal-of-open-source-software">blog post</a> by the founder of JOSS.</p>
+<p>Apart from the fact that JOSS is great for software developers, it has (in my opinion) a great review process. If you read back through my list of complaints in the previous section, it is evident (to me) that all of them are facilitated, or aggravated, by the fact that the review process happens behind closed doors. Reviewers, and authors, can misbehave with very little consequences unless the editor is unusually vigilant.</p>
+<p>JOSS instead employs a fully transparent review process via GitHub. You do need to host your software on GitHub, and have an account there. Then, the review process looks like this:</p>
+<ol type="1">
+<li>You write a short paper describing your software package in Markdown. This makes formatting very easy. Here’s <a href="https://github.com/bluefoxr/COINr/blob/master/paper.md">my paper</a>.</li>
+<li>You commit and push your paper to a folder in your GitHub repo. JOSS then has a nifty “GitHub action” which compiles the paper into a pdf (remotely, on GitHub) and takes care of all the formatting for you. <a href="https://github.com/bluefoxr/COINr/suites/8293873090/artifacts/363646976">Here</a> you can find my compiled pdf.</li>
+<li>An editor is assigned to your paper. They open an issue on the JOSS repo which is the main reference for your paper’s review. You can see the COINr review <a href="https://github.com/openjournals/joss-reviews/issues/4567">here</a>.</li>
+<li>A lot of initial checks are automated using the “editorial bot”, which checks things like word count and references, this alone saves a chunk of editor/reviewer time.</li>
+<li>Reviewers then provide their reviews by opening issues on the repo that hosts the software under review. This means that the authors are instantly aware of the points raised by the reviewers, and can check them off and refer to commits that address the specific issues raised. See e.g.&nbsp;<a href="https://github.com/bluefoxr/COINr/issues/18">this small issue</a> which was flagged by a reviewer and then resolved with a commit.</li>
+<li>When the review process is concluded, if the reviewers and editor are happy, the paper is published online as a pdf and receives a DOI which allows the software to be cited.</li>
+</ol>
+<p>There are at least two things that are great about this process, in my opinion. First of all, everything is public. This means that much of the skullduggery that can occur in the peer review process doesn’t happen, because everything is visible to anyone. Both authors and reviewers are accountable and incentivised to behave ethically. Reviewers can even showcase their reviews as part of their portfolio to demonstrate their competences.</p>
+<p>The second thing is the use of GitHub. Every issue registered by the reviewers is tracked, and modifications to the paper and to the software can be referenced by specific commits. This keeps a perfect record of how each problem was resolved, or not. Comments between authors and reviewers are received in real time, and the authors can address each issue one at a time, rather than having to compile a single giant response. Using GitHub also does away with the huge and clumsy editorial manager systems used by many other journals, and keeps costs low.</p>
+</section>
+<section id="so" class="level1">
+<h1>So</h1>
+<p>I actually stopped writing research papers a couple of years ago because I moved out of an academic position, and at the same time I became a bit disillusioned with academia in general (that’s a story for another day!). However, I did want one last paper to pick up some citations for the COINr package. I approached this with some trepidation, all too familiar with the often-painful experience of trying to get a paper published.</p>
+<p>I have found JOSS to be a really refreshing experience. Worth saying that my paper is still under review and, although I think it should make it, I of course cannot guarantee it will be published. But what is important is the process - the transparency and efficiency has, for me, removed a lot of the problems I have experienced with peer-review. Perhaps the most important thing is that transparency encourages <em>fairness</em>, and I think that is what most of us are looking for in peer review.</p>
+<p>I would personally love to see the JOSS model used more widely. It is of course not the only journal to use open peer review, but (at least in the fields I have worked in) most journals still use blind or double-blind models, which tend to come with a lot of the problems mentioned. It is certainly the first journal I have submitted to that uses GitHub.</p>
+<p>But how generally-applicable is the JOSS process? While the use of Git and GitHub might seem intimidating to some, in reality it is just another tool. Most people have struggled with Word at one point or another, and LaTeX, while brilliant, is often clunky and confusing. Writing in Markdown is actually easier in many respects because you don’t have to worry about formatting. The basics of Git can be learned easily in a day, and are hugely useful in terms of collaboration and tracking. Moreover, everything is free and open-source, which makes it far more inclusive, particularly to authors in less-wealthy countries. So in practice, the use of GitHub, or similar, needn’t be an obstacle and comes with a number of attractive benefits.</p>
+<p>That’s it for now. I must go off and work off some of the issues on my paper!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Copyright 2024, William Becker</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
