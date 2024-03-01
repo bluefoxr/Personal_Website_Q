@@ -1,7 +1,6 @@
 ---
-title: "Publications" 
-description: |
-  Journal publications
+title: "Publications"
+subtitle: "My academic journal articles."
 listing: 
   contents: 
     - "**/index.qmd"
@@ -17,5 +16,7 @@ listing:
 format: 
   html: 
     page-layout: full
-title-block-banner: false
+title-block-banner: true
 ---
+
+See [ResearchGate](https://www.researchgate.net/profile/William-Becker-7) and [Google Scholar](https://scholar.google.com/citations?user=Vvu9K9YAAAAJ&hl=en) for a complete list.

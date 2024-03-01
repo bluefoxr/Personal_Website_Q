@@ -1,30 +1,69 @@
 ---
 title: "William Becker"
 pagetitle: "William Becker, PhD"
-subtitle: "Data Scientist"
-image: img/profile_me_outdoor.jpg
+subtitle: "Hi, I'm a policy-oriented data scientist and researcher"
+image: img/profile_me_outdoor_bw.jpg
 
 about:
   template: solana
   image-width: 28em
   id: hero-heading
+  image-shape: round
   links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/bluefoxr
     - icon: linkedin
-      text: "LinkedIn"
+      text: LinkedIn
       href: https://www.linkedin.com/in/webecker/
+    - icon: github
+      text: Github
+      href: https://github.com/bluefoxr
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=Vvu9K9YAAAAJ
+    - text: "{{< ai researchgate >}} ResearchGate"
+      href: https://scholar.google.com/citations?user=Vvu9K9YAAAAJ
   
 page-layout: full
 title-block-banner: false
 ---
 
 ::: {#hero-heading}
-
 I've led data-driven research projects for international organisations since 2011 on topics from sustainable development to globalisation.
 
+I work for many institutions including the European Commission, UN agencies, consultancies and non-profit organisations.
+
+-   Find out about my [projects](/projects/)
+-   See my academic [publications](/publications/)
+-   Read [what I've been up to lately](/posts/)
+-   [More about me, including CVs](/about.html)
 :::
 
+------------------------------------------------------------------------
 
+::: orgs
+### I work with
+:::
 
+::: {layout="[[20,20,20,20,20,20], [-10], [20,20,20,20,20,20]]" layout-valign="center"}
+![](img/logo_unido.png)
+
+![](img/logo_visti.jpg)
+
+![](img/logo_ec.png)
+
+![](img/unhcr_logo.png)
+
+![](img/logo_sac.png)
+
+![](img/logo_wipo.png)
+
+![](img/logo_find.jpg)
+
+![](img/logo_cedefop.png)
+
+![](img/logo_jw.png)
+
+![](img/logo_fgb.svg)
+
+![](img/logo_tg.svg)
+
+![](img/logo_efis.svg)
+:::

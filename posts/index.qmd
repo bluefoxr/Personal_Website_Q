@@ -1,7 +1,8 @@
 ---
 title: "Blog"
+subtitle: "Here's what I've been doing recently."
 author: ""
-title-block-banner: false
+title-block-banner: true
 page-layout: full
 description-meta: "Things that happened."
 
@@ -22,6 +23,4 @@ image: ""
 code-tools: false
 comments: false
 ---
-
-Here's what I've been doing recently.
 

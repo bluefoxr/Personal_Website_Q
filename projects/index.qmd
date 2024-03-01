@@ -1,7 +1,6 @@
 ---
 title: "Projects"
-description: |
-  Projects I have worked on since going independent in 2020.
+subtitle: "A selection of recent work."
 listing: 
   contents:
     - "**/index.qmd"

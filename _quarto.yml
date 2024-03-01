@@ -14,13 +14,13 @@ website:
       - text: Publications
         href: publications/index.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/bluefoxr/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/webecker/
   page-footer: "Copyright 2024, William Becker"
 format:
   html:
-    theme: cosmo
+    theme: yeti
     css: styles.css
 
 
