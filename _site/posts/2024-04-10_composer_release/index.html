@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="William Becker">
+<meta name="dcterms.date" content="2024-05-30">
+
+<title>William Becker - Launch of the {composer} composite indicator app</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">William Becker</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts/index.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications/index.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bluefoxr/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/webecker/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Launch of the {composer} composite indicator app</h1>
+            <p class="subtitle lead"></p><p>Finally the launch of this open-source web app for interactively building composite indicators!</p><p></p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Indicators</div>
+                <div class="quarto-category">Software</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>William Becker </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 30, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#an-app-for-what" id="toc-an-app-for-what" class="nav-link active" data-scroll-target="#an-app-for-what">An app for what?</a></li>
+  <li><a href="#composite-indicators" id="toc-composite-indicators" class="nav-link" data-scroll-target="#composite-indicators">Composite indicators</a></li>
+  <li><a href="#steps-to-building-a-composite-indicator" id="toc-steps-to-building-a-composite-indicator" class="nav-link" data-scroll-target="#steps-to-building-a-composite-indicator">Steps to building a composite indicator</a></li>
+  <li><a href="#composer-a-new-web-app" id="toc-composer-a-new-web-app" class="nav-link" data-scroll-target="#composer-a-new-web-app">{composer}: a new web-app</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before you start</a></li>
+  <li><a href="#medical-diagnostics-example" id="toc-medical-diagnostics-example" class="nav-link" data-scroll-target="#medical-diagnostics-example">Medical Diagnostics Example</a></li>
+  <li><a href="#wef-nexus-example" id="toc-wef-nexus-example" class="nav-link" data-scroll-target="#wef-nexus-example">WEF Nexus Example</a></li>
+  <li><a href="#what-else" id="toc-what-else" class="nav-link" data-scroll-target="#what-else">What else?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><img src="composer_title.png" class="img-fluid"></p>
+<p>This article introduces the <a href="https://shinyproxy.finddx.org/app/composer">composer app</a>, which is an easy-to-use web app for building and analysing composite indicators. {composer} has been built as part of a project with <a href="https://www.finddx.org/">FIND</a>, a global non-profit connecting countries and communities, funders, decisionmakers, healthcare providers and developers.</p>
+<section id="an-app-for-what" class="level2">
+<h2 class="anchored" data-anchor-id="an-app-for-what">An app for what?</h2>
+<p>Composite indicators are all around us, but unless you’ve been deeply embroiled in international statistics, you may never have heard of them. So let’s start at the beginning and talk about indicators first.</p>
+<p><em>Indicators</em> are used in many contexts, and you may have heard of “key performance indicators” (KPIs) and sustainable development indicators, among other examples. Without agonising over definitions too much, indicators are things we can measure, that <em>indicate</em> the state of something we are interested in. For example a, KPI can <em>indicate</em> the performance or progress of a project or spending programme. Sustainable development indicators <em>indicate</em> the progress of countries towards the UN’s sustainable development goals. And so on.</p>
+<p>Notice that indicators are different from direct measurements. If we want to know how hot it is outside, we can measure the temperature directly with a thermometer. Indicators are used instead where we cannot directly measure the concept we are interested in, usually because:</p>
+<ol type="a">
+<li>It is multidimensional</li>
+<li>It is not precisely defined</li>
+</ol>
+<p>In general we can say that indicators are used to measure complex multidimensional concepts (often socioeconomic), with the aim of prioritising resources and interventions, and also to track progress. In the international/policy context, indicators are often used to compare countries and/or sub-national regions, but indicators can be used to compare/measure universities, businesses, or even individuals. We’ll refer to the things we are comparing with our indicators as <em>units</em> in many places in this article.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dashboard.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">European social scoreboard</figcaption>
+</figure>
+</div>
+<p>In most cases, indicators come in groups, attempting to measure different aspects of performance, development, etc. Groups of indicators are called “scoreboards”, or “dashboards”, depending on your favourite terminology. However, when we get beyond a small number of indicators, it can be increasingly difficult to make sense of the information, especially when the dashboard regards multiple countries.</p>
+</section>
+<section id="composite-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="composite-indicators">Composite indicators</h2>
+<p>Enter composite indicators. <em>Composite indicators</em> are mathematical aggregations of a set of indicators into a single measure. They effectively act as summary measures of the indicators within a dashboard or scoreboard, and facilitate quick and easy comparisons, clear communication with stakeholders, and act as a natural entry point to the data set underneath. Well-known examples of composite indicators include the <a href="https://hdr.undp.org/data-center/human-development-index#/indicies/HDI">Human Development Index</a>, the <a href="https://www.wipo.int/global_innovation_index/en/">Global Innovation Index</a>, and many others. Composite indicators are often built based on <em>conceptual framework</em>, which maps indicators into dimensions and sub-dimensions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="conceptual_f.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">European social scoreboard</figcaption>
+</figure>
+</div>
+<p>In the context of FIND, indicators are used to better understand where there is the most need to direct resources, for example which countries are most in need of funding, and for which type of medical diagnostics. In this context, composite indicators can also provide an important overview of a potentially complex set of indicators.</p>
+<p>Importantly, in building a composite indicator, <em>we do not wish to substitute the underlying data</em>, but rather to complement it with an overview measure. Composite indicators involve a number of subjective decisions in their construction, and cannot fully capture all information in the indicator set underneath. However, used carefully, they are a valuable addition and entry point to a complex data set.</p>
+</section>
+<section id="steps-to-building-a-composite-indicator" class="level2">
+<h2 class="anchored" data-anchor-id="steps-to-building-a-composite-indicator">Steps to building a composite indicator</h2>
+<p>Building a composite indicator is not a mathematically complicated task. However, it does need care in terms of data management, and in making the methodological choices that fit with the objectives of the index. The European Commission’s <a href="https://knowledge4policy.ec.europa.eu/composite-indicators_en">Competence Centre on Composite Indicators and Scoreboards</a> gives a ten-step approach to building composite indicators which is as follows:</p>
+<ol type="1">
+<li>Define the concept to be measured - make a map of your concept.</li>
+<li>Select the indicators, keeping in mind criteria such as data availabililty, relevance, reliability.</li>
+<li>Analyse the data, checking the distributions and key statistics of each indicator. Treat outliers if necessary.</li>
+<li>Normalise indicators onto a common scale, reversing directions if needed.</li>
+<li>Assign weights to indicators and dimensions.</li>
+<li>Aggregate the normalised indicators up to the index scores.</li>
+<li>Check statistical coherence using correlation analysis.</li>
+<li>Assess the impact of uncertainties by running a sensitivity analysis.</li>
+<li>Make sense of the results to reveal narratives and conclusions from the data.</li>
+<li>Present and communicate the results to stakeholders in a clear and focused way, using graphics and key messages.</li>
+</ol>
+<p>Keep in mind these steps are guidelines, and may not fit every context. But they are certainly a good place to start.</p>
+<p>Although some of the steps in this process are qualitative, such as mapping the concept, steps 2-10 all involve at least an element of data analysis, processing and visualisation.</p>
+<p>This is where the <em>Composer</em> app comes in. {Composer} is an interactive web app which walks you through the data steps of building a composite indicator, enabling fast prototyping, results and visualisation. Read on to find out more!</p>
+</section>
+<section id="composer-a-new-web-app" class="level2">
+<h2 class="anchored" data-anchor-id="composer-a-new-web-app">{composer}: a new web-app</h2>
+<p>{composer} is an web-app built in Shiny, and is hosted by FIND <a href="https://shinyproxy.finddx.org/app/composer">here</a>. It can do the following things for you:</p>
+<ul>
+<li>Any number of indicators and units and aggregation levels</li>
+<li>Unit screening by data availability</li>
+<li>Missing data imputation</li>
+<li>Outlier treatment</li>
+<li>Normalisation using various methods</li>
+<li>Weighted aggregation</li>
+<li>Interactive maps (if the units are countries)</li>
+<li>Detailed analysis of indicators using bubble charts, bar charts</li>
+<li>Statistical analysis using visualisation of distributions, correlation plots</li>
+<li>Downloadable unit profiles</li>
+<li>Interactive reweighting</li>
+<li>Sensitivity analysis on assumptions, checking the effects of removing indicators and indicator groups</li>
+</ul>
+<p>What composer doesn’t do:</p>
+<ul>
+<li>It doesn’t help you map your concept, as this is a qualitative task. However, it does provide a visualisation of your concept map.</li>
+<li>It won’t source data for you. You have to provide it with your indicator data.</li>
+<li>In general, it provides analysis from a statistical point of view. It cannot tell you anything about, for example, the relevance of your indicators. Because again, this cannt be inferred from the data.</li>
+</ul>
+<p>Most of the data processing in the app is done using the <a href="https://bluefoxr.github.io/COINr/">COINr package</a>, which is an R package for building and analysing composite indicators. However, {composer} is a convenient graphical interface which removes the need to do any programming, so it is very easy to get started! If you are an R user though, you may wish to additionally work with COINr directly to access functionalities not included in the app. And/or, since {composer} is an R package, you can download and install it, and run the app locally from R with the following command:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"finddx/composer"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load package</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(composer)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># run app</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">run_gui</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="before-you-start" class="level2">
+<h2 class="anchored" data-anchor-id="before-you-start">Before you start</h2>
+<p>We’re nearly at the point of using the app, but not quite, because you need to have a few things ready before you start! The starting point is to provide the app with an Excel spreadsheet containing two tables:</p>
+<ol type="1">
+<li>The indicator data, containing indicator values for each unit.</li>
+<li>The indicator metadata, which specifies the structure of the index, initial weights, indicator names and so on.</li>
+</ol>
+<p>These tables need to follow a specific format, so they require a little care to get right. However, they are very clearly explained in the <a href="https://finddx.github.io/composer/data_input.html">online documentation</a>, and you can also take a look at the <a href="https://github.com/finddx/composer/blob/main/inst/example_input_WH.xlsx">example dataset</a>.</p>
+<p>When you have this spreadsheet ready you can upload it to the app and get started.</p>
+</section>
+<section id="medical-diagnostics-example" class="level2">
+<h2 class="anchored" data-anchor-id="medical-diagnostics-example">Medical Diagnostics Example</h2>
+<p>The best way to showcase the app is with an example. We’ll start with the <em>DX Readiness Index</em>, which the global readiness to deal with a set of diseases. Later we will also show an example which benchmarks countries in terms of resources.</p>
+</section>
+<section id="wef-nexus-example" class="level2">
+<h2 class="anchored" data-anchor-id="wef-nexus-example">WEF Nexus Example</h2>
+<p>The <a href="https://wefnexusindex.org/">WEF Nexus Index</a> is a national-level composite indicator which aims to measure the state of countries in terms of their resources in Water, Energy and Food (WEF). It consists of 21 indicators, organised into three dimensions and six sub-dimensions, as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_framework.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Conceptual framework of the WEF Nexus Index</figcaption>
+</figure>
+</div>
+<p>The data input for {composer}, for this index, is available to download here. Uploading this spreadsheet to the app, we get the visualisation for the framework:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_framework_sunburst.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Conceptual framework of the WEF Nexus Index (composer visualisation)</figcaption>
+</figure>
+</div>
+<p>If you follow this example, you will also notice that the app recognises that we are dealing with country-level data because in this example, the unit codes are ISO alpha-3 country codes (AFG, AGO, ALB, …). This means we can visualise the results on a map later.</p>
+<p>If we want to recreate the WEF Nexus Index from this data, we must follow these steps:</p>
+<ol type="1">
+<li>Treat outliers</li>
+<li>Normalise using min-max, scaled between 0 and 100.</li>
+<li>Aggregate using the arithmetic mean (<em>but with data availability threshold</em>).</li>
+</ol>
+<p>To do this, we go to the Outlier Treatment tab and click “Run”. This shows that seven indicators require data treatment, and some are log-transformed since they are very skewed. Recall that outlier treatment is applied to avoid having indicators that are dominated by some few outlying points. You can read more about this in the relavant <a href="https://finddx.github.io/composer/outliers.html">documentation page</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_treatment.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Treating outliers in the WEF Nexus Index</figcaption>
+</figure>
+</div>
+<p>Next we go to the Normalisation tab. We select the “min-max” method, with lower bound 0 and upper bound 100, following WEF Nexus Index methodology. This now transforms all indicators onto the <span class="math inline">\([0,100]\)</span> interval, and reverses directions where necessary. For example, the indicator “Annual freshwater withdrawals” is a negative-direction indicator (higher values are worse), and so it is flipped at this point. After normalisation, all indicators are aligned such that higher values are better.</p>
+<p>As the final calculation step, we aggregate the normalised scores to get the sub-dimension, dimension and index scores. A recent change to WEF Nexus Index methodology specifies that for each country, it must have a minimum of 2/3 of its indicator values available with any given sub-dimension to calculate a sub-dimension score. We can replicate this by setting the “Min. data availability” bar to 0.66. Now we click “Run” to get the results.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_results_table.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">WEF Nexus Index results</figcaption>
+</figure>
+</div>
+<p>The results table shows at a glance the top countries, and the colour formatting helps to understand also why a given country is where it is. For example, here we see that Iceland is top because it has a very high energy score, both in terms of availability and access.</p>
+<p>To explore the results in more depth we can begin by plotting the index results on a “choropleth” map.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_map.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">WEF Nexus Index results a map (green-blue implies higher scores, red is lower.)</figcaption>
+</figure>
+</div>
+<p>This helps to understand the geographic trends: we see that central African countries, and many in the Middle-East, seem to have the lowest scores. Remember that the mapping feature only works in the app if the unit codes are ISO alpha-3 codes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_profile_ethiopia.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Country profile for Ethiopia</figcaption>
+</figure>
+</div>
+<p>Going to the “Unit profiles” tab, we can see the scores by country. The figure above shows Ethiopia: where it lies in the global ranking, and its scores and ranks for the main index and the (sub-)dimensions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wef_profile_ethiopia2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Country profile for Ethiopia</figcaption>
+</figure>
+</div>
+<p>The top and bottom-ranking indicator tables also help to explain the position of each country in the rankings. Here we see that Ethiopia actually scores quite well in terms of energy indicators, and also in terms of having low CO2 emissions. However on water and food, it scores poorly in comparison to other countries.</p>
+<p>The country profiles are important because they take us back to the underlying data, which consists of real measurements, and explains why a country may score high or low in the index.</p>
+</section>
+<section id="what-else" class="level2">
+<h2 class="anchored" data-anchor-id="what-else">What else?</h2>
+<p>This blog post has just covered some of the main features of the app. But {composer} actually does more! For example, in the “Save/export” menu at the top of the page, you have some very useful options:</p>
+<ol type="1">
+<li>You can export your results, and the data as it is processed at each step, to Excel.</li>
+<li>You can bookmark your progress. Clicking on this link will generate a URL, which will take you back to where you left off last time!</li>
+<li>You can export to R, either by saving the “coin” to an RDS file, or the app will even generate a COINr script which reproduces your results in R using the COINr package!</li>
+</ol>
+<p>This last point is especially useful if you need more advanced features that aren’t available in the app.</p>
+<p>If you want to know more about {composer}, read the <a href="https://finddx.github.io/composer/">online documentation</a>, and check out the source code at its <a href="https://github.com/finddx/composer">GitHub repo</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Copyright 2024, William Becker</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
