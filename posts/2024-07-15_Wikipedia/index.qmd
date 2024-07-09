@@ -1,0 +1,17 @@
+---
+title: "The battle for Wikipedia"
+subtitle: >
+  Wikipedia is great. Or is it?
+author: "William Becker"
+date: "2024-07-15"
+categories:
+  - Meta
+image: "composer_title.png"
+toc: true
+draft: true
+---
+
+![](composer_title.png)
+On the battle for Wikipedia with Andrea.
+
+- 
