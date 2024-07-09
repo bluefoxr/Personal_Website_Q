@@ -19,4 +19,4 @@ format:
 title-block-banner: true
 ---
 
-See [ResearchGate](https://www.researchgate.net/profile/William-Becker-7) and [Google Scholar](https://scholar.google.com/citations?user=Vvu9K9YAAAAJ&hl=en) for a complete list.
+This is all the publications I have gotten round to uploading but it is missing a few. See [ResearchGate](https://www.researchgate.net/profile/William-Becker-7) and [Google Scholar](https://scholar.google.com/citations?user=Vvu9K9YAAAAJ&hl=en) for a complete list.
