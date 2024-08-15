@@ -3,13 +3,13 @@ title: "Launch of the {composer} composite indicator app"
 subtitle: >
   Finally the launch of this open-source web app for interactively building composite indicators!
 author: "William Becker"
-date: "2024-05-30"
+date: "2024-05-10"
 categories:
   - Indicators
   - Software
 image: "composer_title.png"
 toc: true
-draft: true
+draft: false
 ---
 
 ![](composer_title.png)

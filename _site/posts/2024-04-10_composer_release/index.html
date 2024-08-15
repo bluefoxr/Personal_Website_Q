@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="William Becker">
-<meta name="dcterms.date" content="2024-05-30">
+<meta name="dcterms.date" content="2024-05-10">
 
 <title>William Becker - Launch of the {composer} composite indicator app</title>
 <style>
@@ -212,7 +212,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 30, 2024</p>
+        <p class="date">May 10, 2024</p>
       </div>
     </div>
     
@@ -257,14 +257,14 @@ window.Quarto = {
 <li>It is multidimensional</li>
 <li>It is not precisely defined</li>
 </ol>
-<p>In general we can say that indicators are used to measure complex multidimensional concepts (often socioeconomic), with the aim of prioritising resources and interventions, and also to track progress. In the international/policy context, indicators are often used to compare countries and/or sub-national regions, but indicators can be used to compare/measure universities, businesses, or even individuals. We’ll refer to the things we are comparing with our indicators as <em>units</em> in many places in this article.</p>
+<p>In general we can say that indicators are used to measure complex (often socioeconomic) multidimensional concepts, with the aim of prioritising resources and interventions, and also to track progress and raise awareness. In the international/policy context, indicators are often used to compare countries and/or sub-national regions, but indicators can be used to compare/measure universities, businesses, or even individuals. We’ll refer to the things we are comparing with our indicators as <em>units</em> in many places in this article.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="dashboard.png" class="img-fluid figure-img"></p>
 <figcaption>European social scoreboard</figcaption>
 </figure>
 </div>
-<p>In most cases, indicators come in groups, attempting to measure different aspects of performance, development, etc. Groups of indicators are called “scoreboards”, or “dashboards”, depending on your favourite terminology. However, when we get beyond a small number of indicators, it can be increasingly difficult to make sense of the information, especially when the dashboard regards multiple countries.</p>
+<p>In most cases, indicators come in groups, attempting to measure different aspects of performance, development, etc. Groups of indicators are called “scoreboards”, or “dashboards”, depending on your favourite terminology. However, when we get beyond a small number of indicators, it can be increasingly difficult to make sense of the information, especially when the dashboard regards multiple countries/units.</p>
 </section>
 <section id="composite-indicators" class="level2">
 <h2 class="anchored" data-anchor-id="composite-indicators">Composite indicators</h2>
@@ -272,7 +272,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="conceptual_f.png" class="img-fluid figure-img"></p>
-<figcaption>European social scoreboard</figcaption>
+<figcaption>An example of an indicator scoreboard: the European social scoreboard</figcaption>
 </figure>
 </div>
 <p>In the context of FIND, indicators are used to better understand where there is the most need to direct resources, for example which countries are most in need of funding, and for which type of medical diagnostics. In this context, composite indicators can also provide an important overview of a potentially complex set of indicators.</p>
@@ -318,7 +318,7 @@ window.Quarto = {
 <ul>
 <li>It doesn’t help you map your concept, as this is a qualitative task. However, it does provide a visualisation of your concept map.</li>
 <li>It won’t source data for you. You have to provide it with your indicator data.</li>
-<li>In general, it provides analysis from a statistical point of view. It cannot tell you anything about, for example, the relevance of your indicators. Because again, this cannt be inferred from the data.</li>
+<li>In general, it provides analysis from a statistical point of view. It cannot tell you anything about, for example, the relevance of your indicators. Because again, this cannot be inferred from the data.</li>
 </ul>
 <p>Most of the data processing in the app is done using the <a href="https://bluefoxr.github.io/COINr/">COINr package</a>, which is an R package for building and analysing composite indicators. However, {composer} is a convenient graphical interface which removes the need to do any programming, so it is very easy to get started! If you are an R user though, you may wish to additionally work with COINr directly to access functionalities not included in the app. And/or, since {composer} is an R package, you can download and install it, and run the app locally from R with the following command:</p>
 <div class="cell">
@@ -344,7 +344,70 @@ window.Quarto = {
 </section>
 <section id="medical-diagnostics-example" class="level2">
 <h2 class="anchored" data-anchor-id="medical-diagnostics-example">Medical Diagnostics Example</h2>
-<p>The best way to showcase the app is with an example. We’ll start with the <em>DX Readiness Index</em>, which the global readiness to deal with a set of diseases. Later we will also show an example which benchmarks countries in terms of resources.</p>
+<p>The best way to showcase the app is with an example. We’ll start with the <a href="https://www.finddx.org/data-and-impact/dashboards/diagnostic-readiness-index/#/">Pathogen Diagnostics Readiness Index (PDxRI)</a>, which is a simple composite indicator of seven indicators, and measures the global readiness to deal with a set of diseases. Later we will also show an example which benchmarks countries in terms of resources.</p>
+<blockquote class="blockquote">
+<p>The Pathogen Diagnostics Readiness Index (PDxRI) is a comprehensive tool and index for evaluating diagnostic preparedness by assessing the availability of diagnostics globally. The tool aims to highlight the global availability of diagnostic tools, raise awareness about existing gaps in the diagnostic technology landscape, and guide investments for the future development of diagnostic tools.</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_framework.png" class="img-fluid figure-img"></p>
+<figcaption>Conceptual framework of the PDxRI</figcaption>
+</figure>
+</div>
+<p>In this example, the “units” are the pathogens - therefore the purpose of the index is to rank pathogens in terms of diagnostic preparedness. In {composer}, our objective will be to reproduce the results of the index quickly in the app.</p>
+<p>We begin by loading the data set which is available <a href="https://github.com/finddx/dxreadiness.data/blob/main/outbreaks/data/dx_readiness_comp_data_20240514.xlsx">here</a> using the Data Upload interface on the first page of the app. The example data set is already in the correct format for {composer}: an Excel spreadsheet with two tabs, containing in the indicator data and metadata tables respectively. On loading this data, the app recognises the structure of the index an returns a framework plot:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_sunburst.png" class="img-fluid figure-img"></p>
+<figcaption>Conceptual framework of the PDxRI (app visualisation)</figcaption>
+</figure>
+</div>
+<p>In order to reproduce the index, we follow the <a href="https://www.finddx.org/data-and-impact/dashboards/diagnostic-readiness-index/#/methodology">methodological steps</a> as described on the index website:</p>
+<ol type="1">
+<li>Treat outliers using Winsorisation.</li>
+<li>Normalise onto a 0-100 scale.</li>
+<li>Use the arithmetic mean to calculate the index scores.</li>
+</ol>
+<p>These options are all available directly in the app. We begin therefore by treating the outliers. To do this, we go to the “Data operations” dropdown menu, and select the “Outlier treatment” tab. This tab simply gives us the option to treat or not treat outliers, using a <a href="https://finddx.github.io/composer/outliers.html">built-in algorithm based on Winsorisation and a log transform</a>. The results of this process are displayed via the table and summary boxes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_outliers.png" class="img-fluid figure-img"></p>
+<figcaption>Outlier treatment results</figcaption>
+</figure>
+</div>
+<p>The clear outlier in this data set is COVID, which has received far more attention than any of the other pathogens, and therefore has much higher scores. As such, it is treated as an outlier.</p>
+<p>The app works sequentially, so at this point we have now treated our outliers and can move the next operation, which is normalisation. We therefore go to the “Normalise” tab using the navigation menu at the top. To replicate the methodology we select “Min-max” normalisation, and set the min and max to 0 and 100 respectively.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_normalised.png" class="img-fluid figure-img"></p>
+<figcaption>Normalised data set</figcaption>
+</figure>
+</div>
+<p>The app has now normalised each indicator using the specified min-max rule, and displays the modified data in the table. Note that the normalisation step also accounts for the <em>directions</em> of indicators.</p>
+<p>Our final step is simply to aggregate the normalised scores using the “Compose index” tab. Here, we select the weighted arithmetic mean, the “original” weights (which means those specified in the input spreadsheet), and set the minimum data availability to zero since we don’t want to apply any data availability rules here.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_aggregated_table.png" class="img-fluid figure-img"></p>
+<figcaption>Aggregated index scores</figcaption>
+</figure>
+</div>
+<p>Running this produces the results table above, which is colour coded by the index scores, and exactly reproduces the results of the index (note: updates to this data set may eventually change the results).</p>
+<p>At this point, the results of the index can already be exported to Excel by clicking on the “Save/export” dropdown in the top right. You can also export the results to R and the R commands to build the index (see later in this article).</p>
+<p>Here we will just demonstrate a couple of further features of the app. The “Indicator statistics” tab gives us a variety of indicator statistics and plots which allow us to dig deeper into the data and the relationships between indicators:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_stats.png" class="img-fluid figure-img"></p>
+<figcaption>Indicator statistics and plots</figcaption>
+</figure>
+</div>
+<p>To make detailed plots of one indicator (or the index) against another, the “Bubble chart” interface provides a powerful tool for plotting bubble charts, and additionally colouring by grouping variables such as transmission mode.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dx_bubble.png" class="img-fluid figure-img"></p>
+<figcaption>Bubble chart example</figcaption>
+</figure>
+</div>
+<p>This example has shown how a composite indicator can be quickly created and analysed in {composer}. We have only explored a few of the features of the app here, but the <a href="https://finddx.github.io/composer/">online documentation</a> provides a full description. In the next example we will explore some other features of the app including the possibility to build maps when working with country data.</p>
 </section>
 <section id="wef-nexus-example" class="level2">
 <h2 class="anchored" data-anchor-id="wef-nexus-example">WEF Nexus Example</h2>
@@ -355,7 +418,7 @@ window.Quarto = {
 <figcaption>Conceptual framework of the WEF Nexus Index</figcaption>
 </figure>
 </div>
-<p>The data input for {composer}, for this index, is available to download here. Uploading this spreadsheet to the app, we get the visualisation for the framework:</p>
+<p>The data input for {composer}, for this index, is available to download <a href="https://github.com/bluefoxr/Personal_Website_Q/blob/main/posts/2024-04-10_composer_release/wef_composer_input.xlsx">here</a>. Uploading this spreadsheet to the app, we get the visualisation for the framework:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="wef_framework_sunburst.png" class="img-fluid figure-img"></p>
