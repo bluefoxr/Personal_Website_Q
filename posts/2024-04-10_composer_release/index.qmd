@@ -27,11 +27,11 @@ Notice that indicators are different from direct measurements. If we want to kno
 (a) It is multidimensional
 (b) It is not precisely defined
 
-In general we can say that indicators are used to measure complex multidimensional concepts (often socioeconomic), with the aim of prioritising resources and interventions, and also to track progress. In the international/policy context, indicators are often used to compare countries and/or sub-national regions, but indicators can be used to compare/measure universities, businesses, or even individuals. We'll refer to the things we are comparing with our indicators as *units* in many places in this article.
+In general we can say that indicators are used to measure complex (often socioeconomic) multidimensional concepts, with the aim of prioritising resources and interventions, and also to track progress and raise awareness. In the international/policy context, indicators are often used to compare countries and/or sub-national regions, but indicators can be used to compare/measure universities, businesses, or even individuals. We'll refer to the things we are comparing with our indicators as *units* in many places in this article.
 
 ![European social scoreboard](dashboard.png)
 
-In most cases, indicators come in groups, attempting to measure different aspects of performance, development, etc. Groups of indicators are called "scoreboards", or "dashboards", depending on your favourite terminology. However, when we get beyond a small number of indicators, it can be increasingly difficult to make sense of the information, especially when the dashboard regards multiple countries.
+In most cases, indicators come in groups, attempting to measure different aspects of performance, development, etc. Groups of indicators are called "scoreboards", or "dashboards", depending on your favourite terminology. However, when we get beyond a small number of indicators, it can be increasingly difficult to make sense of the information, especially when the dashboard regards multiple countries/units.
 
 ## Composite indicators
 
@@ -114,7 +114,53 @@ When you have this spreadsheet ready you can upload it to the app and get starte
 
 ## Medical Diagnostics Example
 
-The best way to showcase the app is with an example. We'll start with the *DX Readiness Index*, which the global readiness to deal with a set of diseases. Later we will also show an example which benchmarks countries in terms of resources.
+The best way to showcase the app is with an example. We'll start with the [Pathogen Diagnostics Readiness Index (PDxRI)](https://www.finddx.org/data-and-impact/dashboards/diagnostic-readiness-index/#/), which is a simple composite indicator of seven indicators, and measures the global readiness to deal with a set of diseases. Later we will also show an example which benchmarks countries in terms of resources.
+
+> The Pathogen Diagnostics Readiness Index (PDxRI) is a comprehensive tool and index for evaluating diagnostic preparedness by assessing the availability of diagnostics globally. The tool aims to highlight the global availability of diagnostic tools, raise awareness about existing gaps in the diagnostic technology landscape, and guide investments for the future development of diagnostic tools.
+
+![Conceptual framework of the PDxRI](dx_framework.png)
+
+In this example, the "units" are the pathogens - therefore the purpose of the index is to rank pathogens in terms of diagnostic preparedness. In {composer}, our objective will be to reproduce the results of the index quickly in the app.
+
+We begin by loading the data set which is available [here](https://github.com/finddx/dxreadiness.data/blob/main/outbreaks/data/dx_readiness_comp_data_20240514.xlsx) using the Data Upload interface on the first page of the app. The example data set is already in the correct format for {composer}: an Excel spreadsheet with two tabs, containing in the indicator data and metadata tables respectively. On loading this data, the app recognises the structure of the index an returns a framework plot:
+
+![Conceptual framework of the PDxRI (app visualisation)](dx_sunburst.png)
+
+In order to reproduce the index, we follow the [methodological steps](https://www.finddx.org/data-and-impact/dashboards/diagnostic-readiness-index/#/methodology) as described on the index website:
+
+1. Treat outliers using Winsorisation.
+2. Normalise onto a 0-100 scale.
+3. Use the arithmetic mean to calculate the index scores.
+
+These options are all available directly in the app. We begin therefore by treating the outliers. To do this, we go to the "Data operations" dropdown menu, and select the "Outlier treatment" tab. This tab simply gives us the option to treat or not treat outliers, using a [built-in algorithm based on Winsorisation and a log transform](https://finddx.github.io/composer/outliers.html). The results of this process are displayed via the table and summary boxes.
+
+![Outlier treatment results](dx_outliers.png)
+
+The clear outlier in this data set is COVID, which has received far more attention than any of the other pathogens, and therefore has much higher scores. As such, it is treated as an outlier.
+
+The app works sequentially, so at this point we have now treated our outliers and can move the next operation, which is normalisation. We therefore go to the "Normalise" tab using the navigation menu at the top. To replicate the methodology we select "Min-max" normalisation, and set the min and max to 0 and 100 respectively.
+
+![Normalised data set](dx_normalised.png)
+
+The app has now normalised each indicator using the specified min-max rule, and displays the modified data in the table. Note that the normalisation step also accounts for the *directions* of indicators.
+
+Our final step is simply to aggregate the normalised scores using the "Compose index" tab. Here, we select the weighted arithmetic mean, the "original" weights (which means those specified in the input spreadsheet), and set the minimum data availability to zero since we don't want to apply any data availability rules here.
+
+![Aggregated index scores](dx_aggregated_table.png)
+
+Running this produces the results table above, which is colour coded by the index scores, and exactly reproduces the results of the index (note: updates to this data set may eventually change the results).
+
+At this point, the results of the index can already be exported to Excel by clicking on the "Save/export" dropdown in the top right. You can also export the results to R and the R commands to build the index (see later in this article).
+
+Here we will just demonstrate a couple of further features of the app. The "Indicator statistics" tab gives us a variety of indicator statistics and plots which allow us to dig deeper into the data and the relationships between indicators:
+
+![Indicator statistics and plots](dx_stats.png)
+
+To make detailed plots of one indicator (or the index) against another, the "Bubble chart" interface provides a powerful tool for plotting bubble charts, and additionally colouring by grouping variables such as transmission mode.
+
+![Bubble chart example](dx_bubble.png)
+
+This example has shown how a composite indicator can be quickly created and analysed in {composer}. We have only explored a few of the features of the app here, but the [online documentation](https://finddx.github.io/composer/) provides a full description. In the next example we will explore some other features of the app including the possibility to build maps when working with country data.
 
 ## WEF Nexus Example
 
@@ -122,7 +168,7 @@ The [WEF Nexus Index](https://wefnexusindex.org/) is a national-level composite 
 
 ![Conceptual framework of the WEF Nexus Index](wef_framework.jpg)
 
-The data input for {composer}, for this index, is available to download here. Uploading this spreadsheet to the app, we get the visualisation for the framework:
+The data input for {composer}, for this index, is available to download [here](https://github.com/bluefoxr/Personal_Website_Q/blob/main/posts/2024-04-10_composer_release/wef_composer_input.xlsx). Uploading this spreadsheet to the app, we get the visualisation for the framework:
 
 ![Conceptual framework of the WEF Nexus Index (composer visualisation)](wef_framework_sunburst.png)
 

@@ -28,7 +28,7 @@ title-block-banner: false
 ::: {#hero-heading}
 I've led data-driven research projects for international organisations since 2011 on topics from sustainable development to globalisation.
 
-I work for many institutions including the European Commission, UN agencies, consultancies and non-profit organisations.
+I currently work as a training specialist in machine learning at the [ECMWF in Bonn](https://www.ecmwf.int/). Formerly, I worked for many institutions including the European Commission, UN agencies, consultancies and non-profit organisations.
 
 -   Find out about my [projects](/projects/)
 -   See my academic [publications](/publications/)

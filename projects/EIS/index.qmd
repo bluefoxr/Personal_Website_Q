@@ -1,0 +1,28 @@
+---
+title: "European Innovation Scoreboard"
+author:
+  - William Becker
+date: 2024-04-01
+image: featured.png
+categories:
+  - Innovation
+  - Policy
+  - Indicators
+subtitle: "Updating the European Innovation Scoreboard for the European Commission"
+links:
+- icon: book
+  name: website
+  url: https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis
+---
+
+![](featured.png)
+
+The [European Innovation Scoreboard](https://research-and-innovation.ec.europa.eu/statistics/performance-indicators/european-innovation-scoreboard_en) (EIS) is a system of indicators and indexes that is produced by the European Commission to measure innovation performance in EU countries, other European countries, and regional neighbours.
+
+In 2023 [I supported a consortium of companies](https://www.willbecker.me/posts/2023-11-17_eis_bid/), led by the [EFIS Centre](https://www.efiscentre.eu/) in bidding on a contract to update and develop the EIS over the next four years. My role in the bid was explaining how the index calculations would be automated in R, using my now-ubiquitous [COINr package](https://bluefoxr.github.io/COINr/). Something must have gone right with our bid, because we won it and began work on this project in early 2024.
+
+My work on this project has been to replicate the EIS, which was previously calculated over a series of spreadsheets, in R using COINr. More than that, we (with colleagues in Technopolis) set up a full data pipeline, leveraging APIs where possible, to make the process as fully automated and reproducible as possible.
+
+This work was similar to the updates I performed on the [European Skills Index](https://www.willbecker.me/projects/esi/), but had many more complexities: the index had a number of hidden quirks which had to be understood and replicated, and the data covered EU-neighbouring countries which made data collection challenging.
+
+In the end, the result is a much-improved [index page](https://projects.research-and-innovation.ec.europa.eu/en/statistics/performance-indicators/european-innovation-scoreboard/eis-2024#/eis) which has been built by friends in [OneTandem](https://www.onetandem.com/). I think our work has greatly improved the presentation, the transparency and reproducibility of the index. Although this time round we simply replicated the methodology of previous years, the work has laid all the foundations to work on methodological improvements next time around!

@@ -21,7 +21,9 @@ toc: true
 
 ::: {#highlight-text}
 
-I am a policy-oriented data scientist currently based in North Italy. I work for international organisations like the European Commission, UN agencies, policy consultancies and non-profit organisations on topics from GHG emissions and sustainable development to skills systems and innovation.
+I am a policy-oriented data scientist currently working at [European Centre for Medium-Range Weather Forecasting](https://www.ecmwf.int/) in Bonn as a Training Specialist in Machine Learning.
+
+Up until May 2024 I was a freelance data scientist based in North Italy. I worked for international organisations like the European Commission, UN agencies, policy consultancies and non-profit organisations on topics from GHG emissions and sustainable development to skills systems and innovation.
 
 I'm eternally curious about learning new things, and this has led me to work in many different fields. I've worked on high-impact projects with dozens of international organisations.
 
@@ -47,9 +49,20 @@ To find out more about my work, see my recent [projects](https://www.willbecker.
 ## {{< fa building >}}     Experience
 
 ::: {.callout-note icon="false" appearance="minimal"}
+# Training specialist in machine learning
+
+*2024-present*
+
+Designing and managing an international training programme for machine learning (ML) in weather and climate at the European Centre
+for Medium-Range Weather Forecasting. Involves mapping user needs, managing procurements and coordinating with stakeholders in European national meteorological and hyrological services.
+
+:::
+
+
+::: {.callout-note icon="false" appearance="minimal"}
 # Data science/policy consultant
 
-*2020-present*
+*2020-2024*
 
 Statistical, software and data research for international organisations including the European Commission, UN agencies, consultantcies and non-profits. I lead projects from client/stakeholder engagement and workshops through data analytics and web visualisation.
 

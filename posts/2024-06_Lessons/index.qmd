@@ -198,7 +198,10 @@ ask around a bit to get a ballpark figure. While you might be tempted to
 set your rate lower at the beginning, just keep in mind that some
 projects can run over several years, and it can be tricky to change your
 daily rate with an existing client once it has been established, so
-better to get it in the right range from the outset!
+better to get it in the right range from the outset! Don't forget that
+your daily rate has to include things like admin, contract management,
+sorting out IT problems and other niggling bits and pieces that you
+might not consider at first glance.
 
 Keep in mind though that although daily rate is important, what really
 matters is the total that you get paid, and the amount of your
@@ -296,11 +299,11 @@ and expected outcomes of the project right at the beginning.
 
 ![Aim carefully](robinhood.jpg)
 
-One thing that has worked for me is to draw up a proposal from your side
-which states what it is you propose to do under the contract. This sets
-out your understanding of the work, and ensures you are on the same page
-as them from the outset. It also acts as a reference in case things go
-astray at any point.
+One thing that has worked for me is to draw up my own proposal which
+states what it is I propose to do under the contract. This sets out your
+understanding of the work, and ensures you are on the same page as them
+from the outset. It also acts as a reference in case things go astray at
+any point.
 
 Equally important is to check in regularly with the client, even if they
 don't specifically request it. If not, you might spend a couple of
@@ -359,7 +362,7 @@ I can can import into any relevant project.
 Last but by far not the least: take good care of yourself. You are your
 number one resource and asset, so treat yourself as such.
 
-![](heart.png)
+![](heart.png){fig-align="center"}
 
 That means: don't work yourself to death. Make sure you stay reasonably
 fit and healthy. Eat well. Get outside. Meet people in person where
