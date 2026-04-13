@@ -21,8 +21,8 @@ March 2020 also coincided with the start of the pandemic and a long lockdown in 
 
 The problem is that living in a small town in a mostly rural area in North Italy, on-site work options in my line of work basically consist of:
 
-1. The JRC
-2. See 1[^1]
+1.  The JRC
+2.  See 1[^1]
 
 [^1]: To be fair, you could also travel to Milan every day, but... nah.
 
@@ -50,18 +50,18 @@ But apart from all the professional skills that I have learned, I also really le
 
 Probably the best thing about my work is the variety. I have been lucky to work on so many topics, and with so many interesting people, over the last two years. Here are some topics that I've worked as a freelancer, or am about to begin working on:
 
-- Innovation
-- Quality infrastruture
-- Sustainable development
-- Bioeconomy
-- Medical diagnosis
-- Water/Energy/Food
-- International connectivity
-- Migration
-- Air pollution
-- Employee skills
-- Impact assessment
-- Sensitivity analysis
+-   Innovation
+-   Quality infrastruture
+-   Sustainable development
+-   Bioeconomy
+-   Medical diagnosis
+-   Water/Energy/Food
+-   International connectivity
+-   Migration
+-   Air pollution
+-   Employee skills
+-   Impact assessment
+-   Sensitivity analysis
 
 That's quite a good list! Every time I start on a new project I'm fascinated to learn about the new topic. Ok, some topics are more interesting than others, but to me it's a great privilege to be able to work in all these different fields. It's the great thing about stats and data science, it can really be applied to almost anything! And my "clients" are spread over five continents at the last count.
 
@@ -83,7 +83,7 @@ Ok, now let's see the other side of the coin!
 
 **I'm a Lone Wolf** :wolf:
 
-Although I work *for* many people, and I have even worked *with* some great colleagues, there's no denying that freelancing is a bit of a lonely business. I work completely remotely, which is also a good thing, but it means that most days I work on my own. Of course, I have my family around, and I have meetings every now and then with clients, but I'm a social animal (half of the time) and I do miss being part of a team, working together with colleagues and friends *in person* and having coffee breaks and lunches together. 
+Although I work *for* many people, and I have even worked *with* some great colleagues, there's no denying that freelancing is a bit of a lonely business. I work completely remotely, which is also a good thing, but it means that most days I work on my own. Of course, I have my family around, and I have meetings every now and then with clients, but I'm a social animal (half of the time) and I do miss being part of a team, working together with colleagues and friends *in person* and having coffee breaks and lunches together.
 
 When you work in an organisation and in a team there is also a feeling of being "part of something", that you miss as a freelancer. I'm a mercenary, a hired gun - I do the work I'm paid to do and then when it's done, I move onto something else. This is also a good thing, but I guess like the classic wandering cowboys, you do miss the feel of having a home! Oh yes this is getting poetic!
 
@@ -117,9 +117,8 @@ Apart from learning all kinds of professional skills, I also learned some overal
 
 Another thing I learned is that academic papers are not very important outside of academia. Probably not a surprise to anyone, but unless you are planning on working in academia, no one really cares about how many citations you have!
 
-I also learned that having a broad profile has its pros and cons. Whereas I tend to think of myself as a "jack of all trades", quite frequently I think I come across (to people who don't know me) as a rather a "master of none". I think that's due to the fact that I have always loved learning new things and working in new fields, but try putting this on a CV when applying for a job. Usually employers like for people to fit into neat categories, and if your CV is very mixed, its hard to make head or tail of it. I still think a broad profile is a strength, but communicating it as a strength is really a challenge. 
+I also learned that having a broad profile has its pros and cons. Whereas I tend to think of myself as a "jack of all trades", quite frequently I think I come across (to people who don't know me) as a rather a "master of none". I think that's due to the fact that I have always loved learning new things and working in new fields, but try putting this on a CV when applying for a job. Usually employers like for people to fit into neat categories, and if your CV is very mixed, its hard to make head or tail of it. I still think a broad profile is a strength, but communicating it as a strength is really a challenge.
 
 I'll end this extremely long post with a last positive thought about freelancing. Working at the JRC, like any big organisation, can feel a bit like being in a bubble. This is well-known in the JRC, and its the result of bring a lot of sciency people together from different corners of Europe on temporary contracts - naturally they tend to socialise together and talk about JRC stuff, and it can be easy to not get so involved in the outside world. At least for the years that you are working there, the JRC offers a great level of job security and benefits. In short, the bubble is quite cozy.
 
 When I left the JRC, therefore, it was also a test of whether I could stand on my own feet in the cold world outside of the bubble. And I'm glad to say after two years that I can. I have managed to get regular and interesting work, and I could probably carry on doing this almost indefinitely. So, although I may at some point seek the job security and the company of friends and colleagues back in Commission or another big organisation, I do at least know that, if the bubble bursts, I'll be absolutely fine!
-

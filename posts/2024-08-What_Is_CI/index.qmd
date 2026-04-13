@@ -1,0 +1,162 @@
+---
+title: "Tutorial: What are Composite Indicators?"
+subtitle: >
+  All about indicators, scoreboards and the whats and whys of composite indicators.
+author: "William Becker"
+date: "2024-08-05"
+categories: 
+  - Indicators
+  - Composite indicators
+  - Tutorials
+image: "featured.jpg"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## What is a composite indicator?
+
+Good question.
+
+The short answer is that a composite indicator is a mathematical
+aggregation of a set of indicators, usually aiming to measure a
+multidimensional concept. There are likely thousands of examples around,
+including:
+
+-   The Global Innovation Index
+-   The Human Development Index
+-   The Global Attractiveness Index
+-   The Corruption Perceptions Index
+
+…and so on.
+
+However, to better answer the question, we must first take a step back
+and think: what are indicators? And also – why do we use them in the
+first place?
+
+## Indicators
+
+Most people probably have an intuitive idea of what an indicator is. If
+you have ever worked in or anywhere near project management, you will
+probably have come across “performance indicators”, or “key performance
+indicators” (KPIs). These are often used to judge how well a project or
+programme is doing, possibly against some kind of targets or benchmarks.
+
+In the world of policy making, sustainable development goals are
+measured by a set of over 200 indicators at the UN’s SDG Indicators
+Database. Many other international, governmental and policy-related
+organisations have dashboards of indicators tracking everything from
+social rights to the environment.
+
+If we search the internet for “what is an indicator” – various
+definitions pop up. Ignoring those relating to cars and chemistry, here
+are a few examples:
+
+-   The Collins English Dictionary defines an indicator as: “a
+    measurement or value which gives you an idea of what something is
+    like.”.
+-   Investopedia defines indicators as “statistics used to measure
+    current conditions as well as to forecast financial or economic
+    trends.”
+-   Eurostat defines an indicator as “a summary measure related to a key
+    issue or phenomenon and derived from a series of observed facts”.
+
+These definitions vary, but have a few things in common. First of all,
+an indicator is something measurable. Second, it is used to indicate the
+state of something else – the thing we are interested in. This points to
+a key concept: we want to measure something, but that thing is not
+directly measurable. So we use an indirect measurement (an indicator) to
+measure it. In this sense, an indicator is like a proxy measurement.
+
+## Direct and indirect measures
+
+To clarify this, think about things that are actually measurable. How
+long is the table? We can take a tape measure and actually measure that.
+Its length, in centimetres (or your favourite unit), is a direct
+measurement of how long it is. It is not an indicator, it is a
+measurement. The same goes for speed, weight, how many people there are
+in a room, and so on. All these things are directly measurable.
+
+Now take something more complex. How successful is a spending programme
+for stimulating small businesses? Unless we have an incredible machine
+which can somehow magically measure this, we have to face the fact that
+the concept of “success”, within this concept, is something more
+complicated that cannot be directly measured. We can however begin to
+think about how we might indirectly measure it. We could imagine some
+indicators of success: the number of small businesses, their
+profitability, number of employees, and so on.
+
+In short, indicators tend to deal with things that we can’t measure
+directly. They indicate the state or progress of the thing we are
+interested in. And this gives us also the why: we use indicators to
+measure things that we can’t otherwise measure – otherwise, of course,
+we would just measure them!
+
+## Multidimensionality
+
+We have also alluded to a second thing that indicators are associated
+with: multidimensionality, or complexity. Think about the kind of things
+that indicators are used to measure: sustainable development, the impact
+of spending programmes, the state of the economy, and so on. All of
+these are complex concepts that are made up of various facets or
+dimensions. There is uncertainty even in their definition: they may be
+defined differently depending on who you ask.
+
+This means that is rarely enough to have a single indicator measuring
+the concept you are interested in. And this is why indicators often come
+in groups, sometimes called “dashboards” or “scoreboards”, where each
+indicator measures a different component of the whole concept.
+
+The fact is that most of the concepts that policy makers and managers
+are interested in are by their nature multidimensional – so indicators
+are a natural tool to capture them.
+
+## Composite indicators
+
+This finally leads us to composite indicators. A composite indicator is
+a mathematical aggregation of indicators into a single (composite)
+indicator. Often it is done by taking weighted averages of normalised
+indicators, possibly following a hierarchical structure. But why would
+we do that?
+
+The main reason is that dashboards, while useful, can often become
+overwhelming: many complex concepts may require dozens of indicators to
+measure. This problem is especially evident when indicators are used for
+comparisons, such as comparing countries based on environmental
+performance or innovation. Comparing two countries based on a sea of
+indicator values can be difficult.
+
+A composite indicator helps in this regard by summarising a set of
+indicators into one measure. This allows quick comparisons: is country A
+overall doing better than country B? Which country is lagging behind in
+general and may need policy support? Which countries could be looked to
+for best practice?
+
+By providing a high-level summary of the underlying data, users can also
+be easily led in to explore the data set. Composite indicators should
+never be used *instead* of the underlying data, but rather to
+*complement* it. Why does country A have the highest score? Using
+interactive data exploration, a user can delve into the data and find
+out what the famous country A excels at.
+
+As a final “why”, composite indicators are much more digestible to the
+public, and are effective advocacy tools. The Corporate Tax Haven Index,
+as an example, is based on a huge database of complex legal and
+financial data, which would be meaningless to most people. But
+aggregated into an index, it clearly points to some of the main
+offenders in helping corporations avoid tax, and these messages are
+quickly picked up by the media, putting pressure on policy makers and
+regulators.
+
+## Wrapping up
+
+Composite indicators are effective tools for measuring complex (often
+socio-economic) concepts. There are likely thousands of examples out
+there in the wild.
+
+They are not without their limitations – there are many uncertainties in
+their definition, and by aggregating many indicators into one we
+unavoidably lose information. But developed carefully, and used
+responsibly and correctly, they can serve as an easy entry point to a
+complex data set, facilitate comparisons and benchmarking, and help
+publicise thorny issues (if advocacy is your goal).
