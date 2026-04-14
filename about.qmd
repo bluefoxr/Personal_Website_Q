@@ -41,7 +41,7 @@ To find out more about my work, see my recent [projects](https://www.willbecker.
 
 **{{< fa download >}} CV downloads**
 
-[Short CV](/files/cv_2page_William_Becker.pdf){.btn .btn-outline-primary .btn role="button"} [Europass CV](/files/CV_2023-12_Europass.pdf){.btn .btn-outline-primary .btn role="button"} [Academic CV](/files/CV_ac_William_Becker.pdf){.btn .btn-outline-primary .btn role="button"}
+[Europass CV](/files/cv_europass_2026-04-13a.pdf){.btn .btn-outline-primary .btn role="button"}
 :::
 
 :::
@@ -103,9 +103,7 @@ I worked in the Econometrics and Applied Statistics unit of the JRC: my role was
 
 Here are a few links with more info and projects related to me in a professional context.
 
--   I work on indicator and data projects with an excellent team of professionals. Find out more at our website [here](https://compositeindicators.com/), including my blog pages and details about my colleagues.
 -   See my (recent) code at my [GitHub page](https://github.com/bluefoxr).
--   My older personal/professional website is still up [here](https://www.bluefoxdata.eu/).
 -   [LinkedIn](https://www.linkedin.com/feed/)
 -   [Researchgate](https://www.researchgate.net/profile/William-Becker-7) and [Google Scholar](https://scholar.google.com/citations?user=Vvu9K9YAAAAJ&hl=en)
 
