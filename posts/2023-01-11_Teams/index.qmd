@@ -1,7 +1,7 @@
 ---
 title: "I don't like MS Teams"
 subtitle: >
-  Why I really really don't like Microsoft Teams in one short rant :smile:
+  Why I really really don't like Microsoft Teams in one short rant 🙂
 author: "William Becker"
 date: "2022-12-01"
 categories: 
@@ -14,7 +14,7 @@ image: "featured.png"
 
 Sorry, this has to be said to help with my emotional well being because Teams has driven me to the depths of despair and this is the only way I can think of to begin some kind of cathartic healing process.
 
-*(disclaimer: please take the following rant in the humorous way that it is intended)* :innocent:
+*(disclaimer: please take the following rant in the humorous way that it is intended)* 😇
 
 I work as a freelance consultant for multiple organisations. I also have my own Microsoft account. Every time I am invited to collaborate on a project  with a new organisation I have sleepless nights because I know what's coming. It's only a matter of time. The dreaded email. Those awful words. 
 
